@@ -1,13 +1,23 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import "../node_modules/bootstrap/dist/js/bootstrap.bundle"
+import "../node_modules/bootstrap/dist/css/bootstrap.css";
+import "../node_modules/jquery/dist/jquery.js";
 import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
-
+// import App from './App';
+import Login from "./components/login";
+import NavBar from "./components/navBar";
+ import reportWebVitals from './reportWebVitals';
+/*
+This is the main render method that draws the webpage
+*/
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+   <div>
+     <NavBar/>
+     <br></br>
+     <br></br>
+     <Login/>
+   </div>,
   document.getElementById('root')
 );
 
